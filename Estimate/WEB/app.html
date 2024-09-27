@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Banglore Home Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+	<h2>Area (Square Feet)</h2>
+    <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+	<h2>BHK</h2>
+	<div class="select-field">
+		<select name="uiBHK" id="uiBHK">
+			<option value="1">1 BHK</option>
+			<option value="2" selected>2 BHK</option>
+			<option value="3">3 BHK</option>
+			<option value="4">4 BHK</option>
+            <option value="5">5 BHK</option>
+		</select>
+	</div>
+	</form>
+<form class="form">
+	<h2>Bath</h2>
+	<div class="select-field">
+		<select name="uiBathrooms" id="uiBathrooms">
+			<option value="1">1 Bathrooms</option>
+            <option value="2" selected>2 Bathrooms</option>
+            <option value="3">3 Bathrooms</option>
+            <option value="4">4 Bathrooms</option>
+            <option value="5">5 Bathrooms</option>
+		</select>
+	</div>
+		<h2>Location</h2>
+	<div>
+  <select class="location" name="" id="uiLocations">
+    <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+		<option>Electronic City</option>
+        <option>Rajaji Nagar</option>
+  </select>
+</div>
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+</body>
+</html>
